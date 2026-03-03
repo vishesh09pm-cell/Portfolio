@@ -384,8 +384,8 @@ export const detailedCaseStudyData = {
     platform: "Mobile, Desktop & Web",
     
     // Links
-    presentationLink: "/Spotify.pdf",
-    caseStudyFileLink: "/Spotify.md",
+    presentationLink: `${import.meta.env.BASE_URL}Spotify.pdf`,
+    caseStudyFileLink: `${import.meta.env.BASE_URL}Spotify.md`,
     githubLink: "https://github.com/vishesh09pm-cell/Spotify-Case-Study",
     
     // Hero section
@@ -576,8 +576,8 @@ export const detailedCaseStudyData = {
     platform: "Mobile, Desktop, Web & Smart Devices",
     
     // Links
-    presentationLink: "/YT music.pdf",
-    caseStudyFileLink: "/YT music.md",
+    presentationLink: `${import.meta.env.BASE_URL}YT music.pdf`,
+    caseStudyFileLink: `${import.meta.env.BASE_URL}YT music.md`,
     githubLink: "https://github.com/vishesh09pm-cell/YT-Music-Case-Study",
     
     // Hero section
@@ -804,12 +804,12 @@ export const detailedCaseStudyData = {
     platform: "Mobile, Web & Ecosystem Integration",
     
     // Links
-    presentationLink: "/Uber.pdf",
-    caseStudyFileLink: "/Uber.md",
+    presentationLink: `${import.meta.env.BASE_URL}Uber.pdf`,
+    caseStudyFileLink: `${import.meta.env.BASE_URL}Uber.md`,
     githubLink: "https://github.com/vishesh09pm-cell/Uber-Eats-Product-Case-Study",
     
     // Hero section
-    heroImage: "/UberCase.jpeg",
+    heroImage: `${import.meta.env.BASE_URL}UberCase.jpeg`,
     overview: "Comprehensive strategic initiative to grow Uber Eats from 23% to 33-35% market share, closing the gap with DoorDash through driver trust restoration, AI-powered delivery optimization, and ecosystem leverage. Projected to add $10B+ incremental annual revenue.",
     
     // Detailed problem statement
@@ -1035,8 +1035,8 @@ export const detailedCaseStudyData = {
     platform: "Web & Mobile App",
     
     // Links
-    presentationLink: "/Capitalone.pdf",
-    caseStudyFileLink: "/CreditWise.md",
+    presentationLink: `${import.meta.env.BASE_URL}Capitalone.pdf`,
+    caseStudyFileLink: `${import.meta.env.BASE_URL}CreditWise.md`,
     githubLink: "https://github.com/vishesh09pm-cell/CreditWise-Score-Roadmap",
     
     // Hero section

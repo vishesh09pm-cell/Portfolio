@@ -189,7 +189,7 @@ export default function Contact({ forwardedRef }) {
               <div className="flex gap-4">
                 {/* View Resume */}
                 <a
-                  href="/Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf"
+                  href={`${import.meta.env.BASE_URL}Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf`}
                   className="group relative w-fit cursor-pointer"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -200,7 +200,7 @@ export default function Contact({ forwardedRef }) {
                 
                 {/* Download Resume */}
                 <a
-                  href="/Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf"
+                  href={`${import.meta.env.BASE_URL}Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf`}
                   download="Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf"
                   className="group relative w-fit cursor-pointer"
                 >

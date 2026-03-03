@@ -239,7 +239,7 @@ export default function NavBar({ sectionRefs, color }) {
           <a
             ref={cta}
             className="button group relative hover:bg-transparent min-h-[44px] flex items-center"
-            href="/Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf"
+            href={`${import.meta.env.BASE_URL}Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -343,7 +343,7 @@ export default function NavBar({ sectionRefs, color }) {
             Contact
           </Link>
           <a 
-            href="/Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf"
+            href={`${import.meta.env.BASE_URL}Vishesh_Prajapati_AI_PM_Resume_ATS_v2.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleLinkClick}
