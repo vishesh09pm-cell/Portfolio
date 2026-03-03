@@ -11,9 +11,9 @@
       
       // Don't redirect if it's an asset file (has file extension)
       if (!path.match(/\.(js|css|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|ico|json|xml|txt|pdf|md)$/i)) {
-        // Store the path in sessionStorage and redirect to root
+        // Store the path in sessionStorage and redirect to base
         sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
-        location.replace('/');
+        location.replace('/Portfolio/');
       }
     </script>
   </head>
