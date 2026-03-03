@@ -1040,7 +1040,7 @@ export const detailedCaseStudyData = {
     githubLink: "https://github.com/vishesh09pm-cell/CreditWise-Score-Roadmap",
     
     // Hero section
-    heroImage: "/Capitalone.jpeg",
+    heroImage: `${import.meta.env.BASE_URL}Capitalone.jpeg`,
     overview: "Led the development of CreditWise, a personalized credit score improvement platform that achieved 58-point average score improvements for 85,000+ users through data-driven roadmaps, ML-powered recommendations, and behavioral insights. Achieved 72% success rate in helping users improve scores by 50+ points within 6 months.",
     
     // Detailed problem statement
