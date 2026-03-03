@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::-moz-selection {
+    background: #D1D1C7
+  }
+  ::-webkit-selection {
+    background: #D1D1C7
+  }
+  ::selection {
+    background: #D1D1C7
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Scroll offset for fixed navbar */
+  html {
+    scroll-padding-top: 100px; /* Adjust this value based on your navbar height */
+  }
+  
+  .text-smooth {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @font-face {
+    font-family: "CabinetGrotesk-Variable";
+    src: url("./assets/fonts/CabinetGrotesk-Variable.ttf") format("truetype");
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "GeneralSans-Variable";
+    src: url("./assets/fonts/GeneralSans-Variable.ttf") format("truetype");
+    font-weight: 200 700;
+    font-display: swap;
+    font-style: normal;
+  }
+ @media (min-width: 640px) {
+  /* Custom cursor styles removed - using default cursor */
+}
+  body {
+    background-color: #FAFAF9;
+    overflow-x: hidden;
+  }
+  
+  /* Performance optimizations for animations */
+  .transform-gpu {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+  
+  .will-change-transform {
+    will-change: transform, opacity;
+  }
+  
+  /* Smooth scrolling and animation optimizations */
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  a,
+  p,
+  span {
+    @apply font-grotesk;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-general tracking-headings;
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 5px black;
+  }
+  .font-outline-3 {
+    -webkit-text-stroke: 4px #0E0E0C;
+  }
+}
+
+@layer components {
+  .button {
+    @apply  bg-accent-300 px-8 py-3 text-secondary-200 rounded-full
+  }
+}
+
+@layer utilities {
+  .title {
+    clip-path: polygon(0 0, 200% 0, 100% 100%, 0% 100%);
+    line-height: clamp(6rem, 16vw, 10rem); /* Set the desired line height */
+
+  }
+  nav a:hover ~ .cursor {
+    transform: scale(5);
+    opacity: 0;
+  }
+  .section-heading {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+}
+
+
+/* Professional Mermaid Diagram Styling */
+.mermaid-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.mermaid {
+  font-family: 'Space Grotesk', sans-serif !important;
+  min-height: 400px;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mermaid node styling */
+.mermaid .node rect,
+.mermaid .node circle,
+.mermaid .node ellipse,
+.mermaid .node polygon {
+  stroke-width: 3px !important;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Mermaid edge styling */
+.mermaid .edgePath .path {
+  stroke-width: 2.5px !important;
+  stroke: #6b7280 !important;
+}
+
+/* Mermaid label styling */
+.mermaid .nodeLabel,
+.mermaid .edgeLabel {
+  font-weight: 600 !important;
+  font-size: 14px !important;
+}
+
+/* Subgraph styling */
+.mermaid .cluster rect {
+  fill: #f3f4f6 !important;
+  stroke: #d1d5db !important;
+  stroke-width: 2px !important;
+  rx: 12px !important;
+}
+
+.mermaid .cluster-label {
+  font-weight: 700 !important;
+  font-size: 16px !important;
+  fill: #1f2937 !important;
+}
+
+/* Sequence diagram styling */
+.mermaid .actor {
+  stroke: #3b82f6 !important;
+  fill: #dbeafe !important;
+  stroke-width: 3px !important;
+}
+
+.mermaid .messageLine0,
+.mermaid .messageLine1 {
+  stroke-width: 2px !important;
+}
+
+.mermaid .messageText {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+.mermaid .note {
+  fill: #fef3c7 !important;
+  stroke: #f59e0b !important;
+  stroke-width: 2px !important;
+}
+
+/* Enterprise Diagram Popup Styles */
+.react-flow__node {
+  cursor: default;
+}
+
+.react-flow__controls {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.react-flow__minimap {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Prevent body scroll when popup is open */
+body.popup-open {
+  overflow: hidden;
+}
