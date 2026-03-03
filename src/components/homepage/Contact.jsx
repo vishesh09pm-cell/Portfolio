@@ -215,7 +215,7 @@ export default function Contact({ forwardedRef }) {
             <h4 className="text-body-1 2xl:text-4xl font-semibold">My Digital Spaces</h4>
             <div className="space-y-3 text-body-2 2xl:text-3xl">
               <a
-                href="https://www.linkedin.com/in/vishesh-prajapati-aipm/"
+                href="https://www.linkedin.com/in/visheshkumar-prajapati-oza"
                 className="group group flex w-fit items-center space-x-2"
                 target="_blank"
                 rel="noreferrer"

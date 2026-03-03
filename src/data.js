@@ -12,7 +12,7 @@ export const siteConfig = {
   email: "vishesh09.pm@gmail.com",
   social: {
     github: "https://github.com/vishesh09pm-cell",
-    linkedin: "https://www.linkedin.com/in/vishesh-prajapati-aipm/",
+    linkedin: "https://www.linkedin.com/in/visheshkumar-prajapati-oza",
     twitter: "https://x.com/visheshkumar",
   },
 };

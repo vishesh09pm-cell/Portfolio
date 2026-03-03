@@ -142,7 +142,7 @@ export default function Hero() {
       >
         <div className="flex gap-12 justify-center">
           <a 
-            href="https://www.linkedin.com/in/vishesh-prajapati-aipm/" 
+            href="https://www.linkedin.com/in/visheshkumar-prajapati-oza" 
             target="_blank" 
             rel="noopener noreferrer"
             className="group bg-accent-100 border border-accent-200 rounded-full p-4 hover:bg-accent-200 transition-all duration-300 hover:scale-110"
